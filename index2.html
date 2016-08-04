@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>capsss</title>
+	<style>
+		#main{
+			padding-top: 20px;
+			width: 900px;
+			height: auto;
+			margin: 0 auto;
+		}
+		.picture{
+			width:100%;
+			margin-bottom:;
+		}
+		.loremTxt{
+			background: red;
+			padding: 10px 0px 5px 0px;
+			color:white;
+			margin 0 auto;
+		}
+		input{
+			width: 100%;
+			border:1px solid red;
+			margin-top: 10px;
+			padding: 10px 0px;
+			/*padding-left: 30px;*/
+		}
+		input:focus{
+			background-color: lightgray;
+			color: black;
+
+
+		}
+		.btn{
+			color: white;
+			background: red;
+			padding: 5px 20px;
+			border: transparent;
+			margin-top: 15px;
+		}
+		
+		.xett{
+			color: gray;
+		}
+		.border{
+			background-color: red;
+			color: white;
+			padding: 5px 20px;
+			border: transparent;
+		}
+		.background{
+			background-color: red;
+			color: white;
+			padding: 5px 20px;
+			border: transparent;
+			margin-left: 5px;
+		}
+		.position{
+			background-color: red;
+			color: white;
+			padding: 5px 20px;
+			border: transparent;
+			margin-left: 5px;
+		}
+
+
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+	
+	<script type="text/javascript">
+		var MySec=document.createElement('section');
+		MySec.setAttribute('id','main')
+
+		var MyImg = document.createElement('img');
+		MyImg.setAttribute('src','images/01.jpg');
+		MyImg.setAttribute('class','picture')
+
+		document.body.appendChild(MySec);
+		MySec.appendChild(MyImg);
+
+		var MyDiv = document.createElement("div");
+ 		MyDiv.setAttribute("class","loremTxt")        
+		var text = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus numquam magni, vel earum hic, quaerat consequuntur sit explicabo saepe mollitia, cumque esse quas nulla iusto aut repellat! Alias voluptate, nisi.");       
+		MyDiv.appendChild(text);                                
+		document.body.appendChild(MyDiv);
+		MySec.appendChild(MyDiv);
+
+		var MySrc = document.createElement('input');
+		MySrc.setAttribute('placeholder','Seklinizin linkini bura daxil edin');
+		MySec.appendChild(MySrc);
+
+		var BTN =document.createElement("button");
+		var a  =document.createTextNode('ADD IMAGE');
+		BTN.appendChild(a);
+		BTN.setAttribute('class','btn');
+		BTN.setAttribute('onclick','Myfunc()');
+		MySec.appendChild(BTN);
+
+		var MySrc = document.createElement('input');
+		MySrc.setAttribute('placeholder','Caps texti bura daxil edin');
+		MySec.appendChild(MySrc);
+
+		var BTN =document.createElement("button");
+		var b  =document.createTextNode('ADD TEXT');
+		BTN.appendChild(b);
+		BTN.setAttribute('class','btn');
+		BTN.setAttribute('onclick','hide()');
+		MySec.appendChild(BTN);
+
+		var Line =document.createElement('hr');
+		Line.setAttribute('class','xett')
+		MySec.appendChild(Line);
+
+		var BTN =document.createElement("button");
+		var c  =document.createTextNode('CHANGE IMAGE BORDER');
+		BTN.appendChild(c);
+		BTN.setAttribute('class','border');
+		MySec.appendChild(BTN);
+
+		var BTN =document.createElement("button");
+		var d  =document.createTextNode('CHANGE TEXT BACKGROUND AND COLOR');
+		BTN.appendChild(d);
+		BTN.setAttribute('class','background');
+		MySec.appendChild(BTN);
+
+		var BTN =document.createElement("button");
+		var e  =document.createTextNode('CHANGE TEXT POSITION TO TOP');
+		BTN.appendChild(e);
+		BTN.setAttribute('class','position');
+		MySec.appendChild(BTN);
+
+		function Myfunc () {
+			alert("Sekil yoxdur!")
+
+		}
+		// function hide() {
+		// 	hide(document.querySelector('div')[0]);
+
+		// }
+
+		
+	</script>
+</body>
+</html>
